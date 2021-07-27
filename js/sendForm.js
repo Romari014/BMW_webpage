@@ -20,7 +20,7 @@
 };
 
 
-const formElems = document.querySelectorAll('.form');
+
 
 const formHandler = (form) => {
     const smallElem = document.createElement('small');
@@ -78,4 +78,10 @@ const formHandler = (form) => {
     
 };
 
-formElems.forEach(formHandler)
+
+ export default function sendForm() {
+    
+    const formElems = document.querySelectorAll('.form');
+    formElems.forEach(formHandler)
+
+}
