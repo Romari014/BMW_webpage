@@ -18,12 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const SPEED = 0.5;
     const scrolled = event => {
-        event.preventDefault();
+       
 
         const target = event.target;
 
         if(target.matches('[href^="#"]')){
             const pageY = window.pageYOffset;
+            event.preventDefault();
 
             // const hash = target.href.replace(/[^#]*(.*)/, '$1');
             const hash = target.getAttribute('href')
